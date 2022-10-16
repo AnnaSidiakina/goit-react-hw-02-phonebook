@@ -22,7 +22,7 @@ class App extends Component {
     if (
       this.state.contacts
         .map(contact => contact.name.toLowerCase())
-        .includes(data.name)
+        .includes(data.name.toLowerCase())
     ) {
       alert(`${data.name} is already in contacts`);
     } else {
